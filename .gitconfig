@@ -1,0 +1,11 @@
+[user]
+	email = muhendees@gmail.com
+	name = Javad Mustafayev
+	#signingkey = E06DF2DB03902D35
+[commit]
+	#gpgsign = true
+
+[push]
+	default = upstream
+[core]
+	editor = emacsclient

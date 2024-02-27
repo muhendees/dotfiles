@@ -37,4 +37,6 @@ set foldlevel=1
 
 
 colorscheme desert
+nmap <silent> // :nohlsearch<CR>
 
+set smartcase
