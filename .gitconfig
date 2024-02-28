@@ -1,7 +1,7 @@
 [user]
 	email = muhendees@gmail.com
 	name = Javad Mustafayev
-	#signingkey = E06DF2DB03902D35
+	#signingkey = 
 [commit]
 	#gpgsign = true
 

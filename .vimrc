@@ -1,5 +1,5 @@
-set nocompatible              " be iMproved, required
-filetype off                  " required
+set nocompatible
+filetype off
 set pastetoggle=<F2>
 set autoindent
 set smartindent

@@ -19,9 +19,9 @@ setopt HIST_IGNORE_DUPS
 export EDITOR='/opt/homebrew/bin/emacsclient'
 
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
-[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+# [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
 export GOPATH=$HOME/go
 export PATH=$PATH:/Users/javadm/Library/Python/3.9/bin:/usr/local/bin:$HOME/.local/bin:$HOME/.tfenv/bin:/Users/javadm/go/bin
@@ -39,16 +39,10 @@ export PATH=$PATH:$GOROOT/bin
 export HOST=spoon
 
 
-# GitLab
-export GITLAB_USER=javadm
-export GITLAB_ACCESS_TOKEN=glpat-MYZRUCkvEAvxfuxNRs5n
-export VAULT_ADDR=https://vault.immedia.co:8200
-#export VAULT_TOKEN=hvs.w3BuyE20q34PWzt8bumDsckR
-
 # TERRAFORM
-export TF_HTTP_USERNAME=$GITLAB_USER
-export TF_HTTP_PASSWORD=$GITLAB_ACCESS_TOKEN
-export TG_TF_REGISTRY_TOKEN=$GITLAB_ACCESS_TOKEN
+# export TF_HTTP_USERNAME=$GITLAB_USER
+# export TF_HTTP_PASSWORD=$GITLAB_ACCESS_TOKEN
+# export TG_TF_REGISTRY_TOKEN=$GITLAB_ACCESS_TOKEN
 
 #VIRTUALENVWRAPPER
 export VIRTUALENVWRAPPER_PYTHON="/usr/bin/python3"
@@ -59,7 +53,6 @@ source virtualenvwrapper.sh
 LSP_USE_PLISTS=true
 
 # Aliases
-
 alias isotime='date -u +"%Y-%m-%d-%H-%M-%S"'
 alias vi='vim'
 alias ll='ls -lartGsh'
@@ -128,7 +121,7 @@ ec2descp ()
 
 # Colors & prompts
 
-# Colors firs
+# Colors first
 autoload -U colors && colors
 
 # Define prompt
@@ -151,5 +144,4 @@ export PYENV_ROOT="$HOME/.pyenv"
 command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 
-source /Users/javadm/.docker/init-zsh.sh || true # Added by Docker Desktop
 source <(kubectl completion zsh)
